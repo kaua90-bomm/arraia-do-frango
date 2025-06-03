@@ -14,11 +14,14 @@
     }
     header {
       background: #ff9800;
-      padding: 1rem;
+      padding: 2rem;
       text-align: center;
       color: white;
-      background-image: url('https://cdn.pixabay.com/photo/2017/06/30/03/14/festa-junina-2453456_960_720.png');
       background-size: cover;
+    }
+    header img {
+      max-width: 200px;
+      margin-bottom: 1rem;
     }
     header h1 {
       margin: 0;
@@ -40,9 +43,17 @@
     section {
       padding: 2rem;
     }
+    .categoria {
+      margin-bottom: 2rem;
+    }
+    .categoria h3 {
+      background: #fb8c00;
+      color: white;
+      padding: 0.5rem;
+    }
     .cardapio-item {
       background: #ffe0b2;
-      margin: 1rem 0;
+      margin: 0.5rem 0;
       padding: 1rem;
       border-left: 8px solid #fb8c00;
     }
@@ -68,6 +79,7 @@
 </head>
 <body>
   <header>
+    <img src="/mnt/data/cb9dfce8-3778-4c0b-996c-328330d632c6.jpg" alt="Logo Arraiá do Frango">
     <h1>Arraiá do Frango</h1>
     <p>O melhor frango do arraiá tá aqui!</p>
     <a class="btn" href="#cardapio">Ver Cardápio</a>
@@ -81,13 +93,34 @@
 
   <section id="cardapio">
     <h2>Cardápio</h2>
-    <div class="cardapio-item">Frango Frito na Palha</div>
-    <div class="cardapio-item">Frango com Milho Verde</div>
-    <div class="cardapio-item">Espetinho de Frango Caipira</div>
-    <div class="cardapio-item">Sanduíche de Frango com Pimenta Biquinho</div>
-    <div class="cardapio-item">Cuscuz com Frango Desfiado</div>
-    <div class="cardapio-item">Batata Doce Frita com Frango</div>
-    <div class="cardapio-item">Bebidas: quentão sem álcool, suco de milho, refrigerante</div>
+
+    <div class="categoria">
+      <h3>SALGADOS</h3>
+      <div class="cardapio-item">Frango Louco - R$20</div>
+      <div class="cardapio-item">Acompanhamentos: Milho, Mostarda, Ketchup, Maionese</div>
+    </div>
+
+    <div class="categoria">
+      <h3>BEBIDAS</h3>
+      <div class="cardapio-item">Refrigerante - R$5</div>
+    </div>
+
+    <div class="categoria">
+      <h3>DOCES</h3>
+      <div class="cardapio-item">Morango com Chocolate - R$10</div>
+      <div class="cardapio-item">Brownie - R$10</div>
+    </div>
+
+    <div class="categoria">
+      <h3>BRINCADEIRA</h3>
+      <div class="cardapio-item">Derruba Lata - R$15</div>
+    </div>
+
+    <div class="categoria">
+      <h3>COMBOS</h3>
+      <div class="cardapio-item">Compre dois lanches e ganhe um Brownie</div>
+      <div class="cardapio-item">Comprando um lanche e um morango ganhe um copo de refrigerante</div>
+    </div>
   </section>
 
   <section id="sobre">
